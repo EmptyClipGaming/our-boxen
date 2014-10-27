@@ -10,5 +10,15 @@ class people::jamesblack {
       ensure => directory
   }
 
+  repository { $dotfiles: 
+    source => "${::boxen_user}/dotfiles"
+  }
+
+  exec { "install dotfiles": 
+    cwd => $dotfiles,
+    command => "./install.sh",
+    provider => shell,
+    require => Repository[$dotfiles]
+  }
 
 }
