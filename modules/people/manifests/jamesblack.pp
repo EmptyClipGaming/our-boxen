@@ -7,7 +7,7 @@ class people::jamesblack {
   include sublime_text
   include onepassword
   include chrome
-  include onepassword:chrome
+  include onepassword::chrome
 
   $home = "/Users/${::boxen_user}"
   $my   = "${home}/my"
