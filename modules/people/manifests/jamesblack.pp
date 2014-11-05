@@ -1,5 +1,6 @@
 class people::jamesblack {
   include projects::anvil
+  include zsh
   include homebrew
   include iterm2::stable
   include ohmyzsh
