@@ -61,7 +61,7 @@ github "onepassword", "1.1.4"
 github "sublime_text","1.0.2"
 github "dropbox",     "1.4.1"
 github "iterm2",      "1.2.2"
-github "ohmyzsh",     "1.0.0"
+github "ohmyzsh",     "1.0.0", :repo => "erivello/puppet-ohmyzsh"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
