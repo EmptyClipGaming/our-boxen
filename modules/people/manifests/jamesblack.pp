@@ -1,5 +1,13 @@
 class people::jamesblack {
   include projects::anvil
+  include homebrew
+  include iterm2::stable
+  include ohmyzsh
+  include dropbox
+  include sublime_text
+  include onepassword
+  include chrome
+  include onepassword:chrome
 
   $home = "/Users/${::boxen_user}"
   $my   = "${home}/my"
